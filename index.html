@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="container  w-full h-[100vh] justify-center mx-auto" style="background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);">
+    <div >
+
+
+
+<!-- main constant headings -->
+        <section>
+            <div class="flex justify-center text-white text-4xl font-semibold ">
+                <h1 class="mt-9">
+                    WEATHER APP
+                </h1>
+      
+            </div >
+
+        </section>
+      
+
+        <!-- main opening section -->
+        <section class="w-[65%] mx-auto mt-10">
+            <div class="flex justify-around top text-white text-lg  ">
+                <h4 class="rounded px-2 hover:cursor-pointer"  btn-for-subHeading1>Your Weather</h4>
+                <h4 class="rounded px-2 hover:cursor-pointer" btn-for-subHeading2>Search Weather</h4>
+
+            </div>
+
+            <!-- Grant Location Access -->
+            <div class="mt-20 hidden  flex-col" grant-location>
+               
+                <img src="assets/location.png" alt="" class="w-20 mx-auto">
+
+                <div class="text-white flex flex-col justify-center">
+                    <h1 class="mx-auto mt-9 text-3xl font-semibold ">
+                        Grant Location Access
+                    </h1>
+                    <p class="mx-auto">
+                        Allow Access to get weather Information
+                    </p>
+
+                    <button btn-grant class="mx-auto my-6 rounded-md bg-[#3F72AF] p-2 w-fit">
+                        GARANT ACCESS
+                    </button>
+
+            </div>
+        </div>
+
+
+
+        <!-- input page -->
+      
+
+
+            <form action="" id="formInput" class="">
+                <div class="hidden  justify-center mt-10 gap-4 lg:flex-row flex-col" input-form>
+                <div>
+                    <input type="text" id='value-input' placeholder="Search for the City" class="placeholder:opacity-70  placeholder:px-4 placeholder-shown:text-white change-input rounded-lg lg:w-[35rem] w-[15rem] h-10  px-4">
+                </div>
+                <div>
+                    <button type="submit" class="" btn-submit>
+                        <img src="assets/search.png" alt="" class="rounded-full bg-[#3F72AF] p-1 w-9  ">
+                    </button>
+                </div>
+
+            </div>
+            </form>
+            
+                    <!-- Error -->
+                    <div error class="hidden">
+                        <img src="assets/not-found.png" alt="" class="w-40 flex justify-center mx-auto
+                        ">
+                    </div>
+
+                        <!-- main weather 2-->
+
+                        <div class="mt-5 hidden  flex-col  items-center w-full" main-weather>
+                            <!-- 1st -->
+                            <div class="flex gap-4">
+                                <div class="text-4xl">
+                                    <h1 city2></h1>
+                                </div>
+                                <div>
+                                    <img src="" alt="" class="w-8" count-flag2>
+                                </div>
+                            </div>
+                            <!-- 2nd -->
+                            <div>
+                                <h2 weather-Condition2></h2>
+                            </div>
+                            <!-- 3rd -->
+                            <div>
+                                <img src="" alt="" class="w-20" weather-condition-logo2>
+                            </div>
+                            <!-- 4th -->
+                            <div>
+                                <h1 class="text-6xl" temperature2>
+            
+                                </h1>
+                            </div>
+                            <!-- 5th  Cards-->
+                            <div class="flex lg:flex-row flex-col gap-12  mt-8 text-white">
+            
+                                <!-- 1 -->
+                                <div class="lg:px-12 lg:py-5 px-5 py-1 rounded-lg bg-[#859DBE]">
+                                    <div>
+                                        <img src="assets/wind.png" alt="" class="w-10">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold" >WINDSPEED</h3>
+                                    </div>
+                                    <div>
+                                        <p para12>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="lg:px-12 lg:py-5 px-5 py-1 rounded-lg bg-[#859DBE]">
+                                    <div>
+                                        <img src="assets/humidity.png" alt="" class="w-10">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold" >HUMIDITY</h3>
+                                    </div>
+                                    <div>
+                                        <p para22>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="lg:px-12 lg:py-5 px-5 py-1 rounded-lg bg-[#859DBE]   ">
+                                    <div>
+                                        <img src="assets/cloud.png" alt="" class="w-10">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold CLOUDS">CLOUDS</h3>
+                                    </div>
+                                    <div>
+                                        <p para32>
+                                        </p>
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+
+
+
+            <!-- main weather 1 main-->
+
+            <div class="mt-5 hidden  flex-col  items-center w-full" main-weather-main>
+                <!-- 1st -->
+                <div class="flex gap-4">
+                    <div class="text-4xl">
+                        <h1 city></h1>
+                    </div>
+                    <div>
+                        <img src="" alt="" class="w-8" count-flag>
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div>
+                    <h2 weather-Condition></h2>
+                </div>
+                <!-- 3rd -->
+                <div>
+                    <img src="" alt="" class="w-20" weather-condition-logo>
+                </div>
+                <!-- 4th -->
+                <div>
+                    <h1 class="text-6xl" temperature>
+
+                    </h1>
+                </div>
+                <!-- 5th  Cards-->
+                <div class="flex lg:flex-row flex-col gap-12  mt-8 text-white">
+
+                    <!-- 1 -->
+                    <div class="lg:px-12 lg:py-5 px-5 py-1 rounded-lg bg-[#859DBE]">
+                        <div>
+                            <img src="assets/wind.png" alt="" class="w-10">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold" WINDSPEED>WINDSPEED</h3>
+                        </div>
+                        <div>
+                            <p para1>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="lg:px-12 lg:py-5 px-5 py-1 rounded-lg bg-[#859DBE]">
+                        <div>
+                            <img src="assets/humidity.png" alt="" class="w-10">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold" HUMIDITY>HUMIDITY</h3>
+                        </div>
+                        <div>
+                            <p para2>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="lg:px-12 lg:py-5 px-5 py-1 rounded-lg bg-[#859DBE]   ">
+                        <div>
+                            <img src="assets/cloud.png" alt="" class="w-10">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold CLOUDS">CLOUDS</h3>
+                        </div>
+                        <div>
+                            <p para3>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Loader Section -->
+
+            <div class="hidden  justify-center" loading>
+                <div>
+                    <img src="assets/loading.gif" alt="" class="w-44">
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+        <script src="script.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,29 @@
+.active-bg-col-tab{
+    background-color: #7D91AD;
+}
+
+.active{
+    display: flex;
+}
+
+.change-input{
+    display:unset;
+    background-color: #7F95B1;
+}
+
+.change-input:focus{
+    /* border: 2px solid white;
+     */
+     outline: 2px solid white;
+}
+
+
+input::placeholder{
+    color: white;
+    font-size:large;
+    
+}
+input{
+    color: white;
+
+}
